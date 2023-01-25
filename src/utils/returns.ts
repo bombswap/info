@@ -5,7 +5,7 @@ import { getShareValueOverTime } from '.'
 
 export const priceOverrides = [
   '0x75942dd8bd0c6f845a647e0fa157b5725077960d', // USDC
-  '0x0fcbc0bacad8c73be4fad141682542b44c4737bb', // DAI
+  '0x0fcbc0bacad8c73be4fad141682542b44c4737bb', // USDT
 ]
 
 interface ReturnMetrics {
