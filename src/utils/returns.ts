@@ -4,8 +4,8 @@ import dayjs from 'dayjs'
 import { getShareValueOverTime } from '.'
 
 export const priceOverrides = [
-  '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', // USDC
-  '0x6b175474e89094c44da98b954eedeac495271d0f', // DAI
+  '0x75942dd8bd0c6f845a647e0fa157b5725077960d', // USDC
+  '0x0fcbc0bacad8c73be4fad141682542b44c4737bb', // DAI
 ]
 
 interface ReturnMetrics {
