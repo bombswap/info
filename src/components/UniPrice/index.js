@@ -23,16 +23,17 @@ function formatPercent(rawPercent) {
   } else return parseFloat(rawPercent * 100).toFixed(0) + '%'
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default function UniPrice() {
   const daiPair = usePairData('0x0af490e36c69534d83687636bfc52c726c3fdcf1')
   const usdcPair = usePairData('0xf30c0072dfa69aee9df375ef46b8e841530762e6')
   const usdtPair = usePairData('0xfdb4c8454d2a2b41ed8e2e64ad2d4764f60518db')
 
-  const totalLiquidity = useMemo(() => {
-    return daiPair && usdcPair && usdtPair
-      ? daiPair.trackedReserveUSD + usdcPair.trackedReserveUSD + usdtPair.trackedReserveUSD
-      : 0
-  }, [daiPair, usdcPair, usdtPair])
+  // const totalLiquidity = useMemo(() => {
+  //   return daiPair && usdcPair && usdtPair
+  //     ? daiPair.trackedReserveUSD + usdcPair.trackedReserveUSD + usdtPair.trackedReserveUSD
+  //     : 0
+  // }, [daiPair, usdcPair, usdtPair])
 
   const daiPerEth = daiPair ? parseFloat(daiPair.token0Price).toFixed(2) : '-'
   const usdcPerEth = usdcPair ? parseFloat(usdcPair.token0Price).toFixed(2) : '-'
