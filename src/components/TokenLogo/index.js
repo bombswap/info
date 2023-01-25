@@ -71,9 +71,9 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     )
   }
 
-  const path = `https://raw.githubusercontent.com/bombmoney/bomb-assets/master/bombswap/${isAddress(
-    address
-  ).toLowerCase()}.png`
+  const path = `https://raw.githubusercontent.com/bombmoney/bomb-assets/master/bombswap/${isAddress(address)
+    .toString()
+    .toLowerCase()}.png`
 
   return (
     <Inline>
