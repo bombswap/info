@@ -24,8 +24,8 @@ function formatPercent(rawPercent) {
 }
 
 export default function UniPrice() {
-  const daiPair = usePairData('0x0c5ecd7b6d9bb4996f3ee98ae3cbe7ed06a66f0c')
-  const usdcPair = usePairData('0x75942dd8bd0c6f845a647e0fa157b5725077960d')
+  const daiPair = usePairData('0x0af490e36c69534d83687636bfc52c726c3fdcf1')
+  const usdcPair = usePairData('0xf30c0072dfa69aee9df375ef46b8e841530762e6')
   const usdtPair = usePairData('0xfdb4c8454d2a2b41ed8e2e64ad2d4764f60518db')
 
   const totalLiquidity = useMemo(() => {
@@ -36,28 +36,28 @@ export default function UniPrice() {
 
   const daiPerEth = daiPair ? parseFloat(daiPair.token0Price).toFixed(2) : '-'
   const usdcPerEth = usdcPair ? parseFloat(usdcPair.token0Price).toFixed(2) : '-'
-  const usdtPerEth = usdtPair ? parseFloat(usdtPair.token1Price).toFixed(2) : '-'
+  const usdtPerEth = usdtPair ? parseFloat(usdtPair.token0Price).toFixed(2) : '-'
 
   return (
     <PriceCard>
       <AutoColumn gap="10px">
         <RowFixed>
-          <TYPE.main>WBTC/BOMB: {formattedNum(daiPerEth, true)}</TYPE.main>
-          <TYPE.light style={{ marginLeft: '10px' }}>
+          <TYPE.main>BUSD/BOMB: {formattedNum(daiPerEth, true)}</TYPE.main>
+          {/* <TYPE.light style={{ marginLeft: '10px' }}>
             {daiPair && totalLiquidity ? formatPercent(daiPair.trackedReserveUSD / totalLiquidity) : '-'}
-          </TYPE.light>
+          </TYPE.light> */}
         </RowFixed>
         <RowFixed>
           <TYPE.main>USDC/BOMB: {formattedNum(usdcPerEth, true)}</TYPE.main>
-          <TYPE.light style={{ marginLeft: '10px' }}>
+          {/* <TYPE.light style={{ marginLeft: '10px' }}>
             {usdcPair && totalLiquidity ? formatPercent(usdcPair.trackedReserveUSD / totalLiquidity) : '-'}
-          </TYPE.light>
+          </TYPE.light> */}
         </RowFixed>
         <RowFixed>
           <TYPE.main>USDT/BOMB: {formattedNum(usdtPerEth, true)}</TYPE.main>
-          <TYPE.light style={{ marginLeft: '10px' }}>
+          {/* <TYPE.light style={{ marginLeft: '10px' }}>
             {usdtPair && totalLiquidity ? formatPercent(usdtPair.trackedReserveUSD / totalLiquidity) : '-'}
-          </TYPE.light>
+          </TYPE.light> */}
         </RowFixed>
       </AutoColumn>
     </PriceCard>
