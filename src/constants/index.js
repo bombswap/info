@@ -19,12 +19,8 @@ export const SUPPORTED_LIST_URLS__NO_ENS = [
 
 // hide from overview list
 export const TOKEN_BLACKLIST = [
-  '0x495c7f3a713870f68f8b418b355c085dfdc412c3',
-  '0xc3761eb917cd790b30dad99f6cc5b4ff93c4f9ea',
-  '0xe31debd7abff90b06bca21010dd860d8701fd901',
-  '0xfc989fbb6b3024de5ca0144dc23c18a063942ac1',
-  '0xf4eda77f0b455a12f3eb44f8653835f377e36b76',
-  '0x93b2fff814fcaeffb01406e80b4ecd89ca6a021b',
+  '0xca2de0ad1a82f78d42284774411f336f2550e7f5',
+  '0x0889ce27ade6231a9820e34ba6e68fc0142b8d18',
 
   // rebass tokens
   '0x9ea3b5b4ec044b70375236a281986106457b20ef',
@@ -36,10 +32,11 @@ export const TOKEN_BLACKLIST = [
 
 // pair blacklist
 export const PAIR_BLACKLIST = [
-  '0xb6a741f37d6e455ebcc9f17e2c16d0586c3f57a5',
-  '0x97cb8cbe91227ba87fc21aaf52c4212d245da3f8',
-  '0x1acba73121d5f63d8ea40bdc64edb594bd88ed09',
-  '0x7d7e813082ef6c143277c71786e5be626ec77b20',
+  '0x96b5cae9a24ddded494e40640b9639e9de73bd4b',
+  '0xe3d0ccbbd5a3b9aa1232a627794cc170b4934ca4',
+  '0x1ee0b388db6264380fe5f1dfbc13d92b0dcdcd85',
+  '0x218ef54ba951deb693173841085c7595a146af6e',
+  '0xa00a5fe3523984603c20c797cc8e1094aa28e1de',
 ]
 
 // warnings to display if page contains info about blocked token
