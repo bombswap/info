@@ -6,7 +6,7 @@ import Link from '../Link'
 const links = [
   { url: 'https://www.bombswap.xyz', text: 'About' },
   { url: 'https://docs.bombswap.xyz/', text: 'Docs' },
-  { url: 'https://github.com/Uniswap/uniswap-info', text: 'Code' },
+  { url: 'https://github.com/bombswap/info', text: 'Code' },
 ]
 
 const FooterLink = ({ children, ...rest }) => (
